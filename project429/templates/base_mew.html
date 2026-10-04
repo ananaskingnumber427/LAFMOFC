@@ -1,0 +1,33 @@
+<link rel="stylesheet" href={{ url_for("static", filename="styles.css") }} />
+
+<html>
+    <body>
+        <h1><b>"Музыка Mewgenics"</h1></b>    
+        <h2><b>"на этом сайте указанна информация о музыке из игры Mewgenics"</h2></b> 
+        <form method = "POST">  
+        <table>
+            <tr> 
+                <td>название локации/песни:</td>
+                <td><input type='text', name='loksong'></td>
+                <td><input type='submit'></td>
+
+          </tr> 
+        </table>   
+        </form>  
+        <p>{{ loksong }}</p>
+      <ol> 
+        <li><a href="http://127.0.0.1:5000/eatinrats">"Eating rats"</a></li>    
+        <li><a href="http://127.0.0.1:5000/flush">"Flush"</a></li>    
+        <li><a href="http://127.0.0.1:5000/cristalinedreams">"Cristaline dreams"</a></li>     
+        <li><a href="http://127.0.0.1:5000/chumbucketkitty">"Chumbucket kitty"</a></li>  
+        <li><a href="http://127.0.0.1:5000/themkittybones">"Them kitty bones"</a></li>
+        <li><a href="http://127.0.0.1:5000/guilotina">"Guilotina"</a></li>
+        <li><a href="http://127.0.0.1:5000/sweetdelicious">"Sweet delicious"</a></li>
+        <li><a href="http://127.0.0.1:5000/throbingking">"Throbing king"</a></li>
+
+      
+        </ol>                
+
+    </body>
+
+</html>

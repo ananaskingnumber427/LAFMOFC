@@ -1,0 +1,38 @@
+body {background-color: #ffd7a3 ; color: #164414}
+a {color: rgb(109, 29, 23) ; background-color: rgb(101, 219, 255); 
+    transition: background-color 0,5; transition: color 0,5 }
+
+a:hover {color: rgb(101, 219, 255); background-color: rgb(109, 29, 23) }
+@media (prefers-color-scheme: dark) {body {background-color: #164414 ; color: #ffd7a3}}
+
+@keyframes float {
+    0%, 100% {transform: translateY(10);}
+    50% {transform: translateY(-10px);}
+}
+h1 {animation: float 2s infinite}
+
+@keyframes colorShift {
+    0% { color: #f80404; }
+    25% { color: #fced1d; }
+    50% { color: #30fc15; }
+    75% { color: #0b2ef5; }
+    100% { color: #f80404; }
+}
+p {animation: colorShift 3s infinite}     
+
+@keyframes glitch {
+    0%, 100% {text-shadow:2px 2px 0 #ff0000af,-2px -2px 0 #310000af;}
+    25% {text-shadow:-2px 2px 0 #ff0000af,2px -2px 0 #310000af;}
+}
+
+.throbing {animation: glitch 1s infinite}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.square {animation: rotate 2s linear infinite;}
+
+
+

@@ -1,0 +1,16 @@
+<link rel="stylesheet" href={{ url_for("static", filename="styles.css") }} />
+
+{% extends "post_shablon.html" %}
+{% block text %}
+
+<h2>Sweet delicious</h2>
+
+<p>интересные факты о песне:</p>
+<ol>
+    <li>это самая не запоминающаяся песня во всей игре</li>
+    <li>это самая жуткая песня во всей игре</li>
+    <li>это самая отвратительная(в хорошем смысле) песня во всей игре</li>
+</ol>
+<br>
+
+{% endblock %}
